@@ -15,7 +15,7 @@ export class Util{
             console.log(hash);
             
             var data = {
-                [file.substring(0,1)]: hash
+                [file.replace(".png", " ").trim()]: hash
             }
             
             json.push(data)
